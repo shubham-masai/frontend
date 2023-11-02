@@ -47,7 +47,7 @@ const Login = () => {
     const handleLogin = async () => {
         let payload = { email: email, pass: password };
         try {
-            const res = await axios.post(`https://poised-slug-khakis.cyclic.app/users/login`, payload);
+            const res = await axios.post(`https://native-server-eta.vercel.app/users/login`, payload);
             console.log(res);
             if (res.status === 200) {
                 setSuccMsg(res.data.msg);

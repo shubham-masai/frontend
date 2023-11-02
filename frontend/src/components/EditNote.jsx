@@ -47,7 +47,7 @@ const EditNote = () => {
     useEffect(() => {
         const fetchNoteData = async () => {
             try {
-                const response = await axios.get(`https://poised-slug-khakis.cyclic.app/notes/${noteId}`, {
+                const response = await axios.get(`https://native-server-eta.vercel.app/notes/${noteId}`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("AuthToken")}`,
                     },
@@ -70,7 +70,7 @@ const EditNote = () => {
             body
         }
         try {
-             await axios.patch(`https://poised-slug-khakis.cyclic.app/notes/update/${noteId}`, paylaod, {
+             await axios.patch(`https://native-server-eta.vercel.app/notes/update/${noteId}`, paylaod, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("AuthToken")}`,
                 },

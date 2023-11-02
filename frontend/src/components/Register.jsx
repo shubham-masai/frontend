@@ -46,7 +46,7 @@ const Registration = () => {
   const handleRegister = async () => {
     let payload = { name: username, email: email, pass: pass };
     try {
-      const res = await axios.post(`https://poised-slug-khakis.cyclic.app/users/register`,payload);
+      const res = await axios.post(`https://native-server-eta.vercel.app/users/register`,payload);
       if (res.status === 200) {
         setSuccMsg(res.data.msg);
         setErrorMsg("");

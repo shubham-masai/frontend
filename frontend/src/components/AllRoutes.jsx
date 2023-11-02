@@ -4,6 +4,7 @@ import { Login } from "./Login"
 import { Home } from "./Home"
 import NoteForm from "./create"
 import { EditNote } from "./EditNote"
+import UserAccount from "./User"
 const AllRoutes = () => {
     return <div>
         <Routes>

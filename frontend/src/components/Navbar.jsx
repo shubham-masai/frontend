@@ -25,7 +25,7 @@ const Navbar = () => {
     const Navigate = useNavigate();
     const handleLogout = async () => {
         try {
-            await axios.get(`https://poised-slug-khakis.cyclic.app/users/logout`, {
+            await axios.get(`https://native-server-eta.vercel.app/users/logout`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("AuthToken")}`,
                 },
@@ -50,6 +50,7 @@ const Navbar = () => {
                 </>
             )}
             <Link to="/" style={linkStyle}>Home</Link>
+            <Link to={"/user"}>User</Link>
         </div>
     );
 }

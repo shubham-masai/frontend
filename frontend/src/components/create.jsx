@@ -47,7 +47,7 @@ const NoteForm = () => {
     const newNote = { title, body };
 
     try {
-      const response = await axios.post("https://poised-slug-khakis.cyclic.app/notes/create", newNote, {
+      const response = await axios.post("https://native-server-eta.vercel.app/notes/create", newNote, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("AuthToken")}`,
         },

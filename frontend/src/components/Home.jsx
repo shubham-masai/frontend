@@ -7,7 +7,7 @@ const Home = () => {
     useEffect(() => {
         const fetchNotes = async () => {
             try {
-                const response = await axios.get("https://poised-slug-khakis.cyclic.app/notes", {
+                const response = await axios.get("https://native-server-eta.vercel.app/notes", {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("AuthToken")}`,
                     },
@@ -24,7 +24,7 @@ const Home = () => {
     const handleDelete = async (noteId) => {
         console.log(noteId)
         try {
-            await axios.delete(`https://poised-slug-khakis.cyclic.app/notes/delete/${noteId}`, {
+            await axios.delete(`https://native-server-eta.vercel.app/notes/delete/${noteId}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("AuthToken")}`,
                 },
